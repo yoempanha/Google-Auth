@@ -40,9 +40,7 @@ fun MainScreen() {
     val googleSignInClient = remember {
         GoogleSignIn.getClient(
             context,
-            GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestEmail()
-                .build()
+            GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build()
         )
     }
 
