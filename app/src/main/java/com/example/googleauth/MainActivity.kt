@@ -74,7 +74,7 @@ fun MainScreen() {
             errorMessage = null
         } catch (e: ApiException) {
             errorMessage =
-                "Can not get access from google Account.\nCause: ${e.message}\nStatus Code: ${e.statusCode}\nStatus: ${e.status.statusMessage}"
+                "Can not get access from google Account." + "\nCause: ${e.message}" + "\nStatus Code: ${e.statusCode}" + "\nStatus: ${e.status.statusMessage}"
         }
         isLoading = false
     }
